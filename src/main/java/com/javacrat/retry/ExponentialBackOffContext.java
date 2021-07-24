@@ -43,9 +43,6 @@ public class ExponentialBackOffContext {
             return maxInterval;
         }
 
-
-
-
     public static void main(String[] args) {
         ExponentialBackOffContext exponentialBackOffContext = new ExponentialBackOffContext(3, Math.PI, Long.MAX_VALUE);
         System.out.println(exponentialBackOffContext.getSleepAndIncrement());
