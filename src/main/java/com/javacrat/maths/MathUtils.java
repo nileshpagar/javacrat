@@ -5,10 +5,9 @@ public class MathUtils {
     public static int gcd(int number1, int number2) {
         int gcd = 0;
         if (number1 == number2) return number1;
-        int min = number1, max = number2;
+        int min = number1;
         if (number1 > number2) {
             min = number2;
-            max = number1;
         }
         for (int i = min; i > 0; i--) {
             if (number1%i == 0 && number2%i ==0) {
