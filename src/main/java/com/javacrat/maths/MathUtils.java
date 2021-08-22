@@ -1,5 +1,8 @@
 package com.javacrat.maths;
 
+import static java.lang.Math.ceil;
+import static java.lang.Math.log10;
+
 public class MathUtils {
 
     public static int gcd(int number1, int number2) {
@@ -37,6 +40,9 @@ public class MathUtils {
         int number1 = 6, number2=15;
         System.out.println("GCD of " + number1 + " and " + number2 + " is " + MathUtils.gcd(number1,number2));
         System.out.println("LCM of " + number1 + " and " + number2 + " is " + MathUtils.lcm(number1,number2));
+        System.out.println(ceil(log10(123456+1)));
     }
+
+
 
 }

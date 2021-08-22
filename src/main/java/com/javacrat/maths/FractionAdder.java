@@ -3,8 +3,8 @@ package com.javacrat.maths;
 public class FractionAdder {
 
     public static void main(String[] args) {
-        add(1, 4, 3, 8);
-        add(2, 3, 5, 8);
+        add(1, 3, 1, 5);
+//        add(2, 3, 5, 8);
     }
 
     private static void add(int n1, int d1, int n2, int d2) {
@@ -17,7 +17,9 @@ public class FractionAdder {
             d = lcm;
             n = n1*(lcm/d1) + n2*(lcm/d2);
         }
-        System.out.println((n/gcd(n,d) + "/" + d/gcd(n,d)));
+        System.out.println("   "+ (n/gcd(n,d)));
+        System.out.println( "-------");
+        System.out.println("   "+d/gcd(n,d));
     }
 
     public static int gcd(int a, int b) {
