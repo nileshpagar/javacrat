@@ -1,9 +1,12 @@
 package com.javacrat.queue;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
 class MyQueueUsingArray {
+
+
     // store elements
     private List<Integer> data;
     // a pointer to indicate the start position
@@ -37,6 +40,7 @@ class MyQueueUsingArray {
 
 public class QueueWithArray {
     public static void main(String[] args) {
+        Math.sqrt(Integer.MAX_VALUE);
         MyQueueUsingArray q = new MyQueueUsingArray();
         q.enQueue(5);
         q.enQueue(3);

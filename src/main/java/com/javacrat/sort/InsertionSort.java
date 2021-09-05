@@ -22,9 +22,8 @@ public class InsertionSort {
     public static int[] insert(int[] array, int element){
         int[] inserted = new int[array.length + 1];
         if (array.length == 0 ) inserted[0] = element;
-        int i=0, j=0;
         boolean isInserted = false;
-        for (; i<array.length; i++,j++){
+        for (int i=0, j=0; i<array.length; i++,j++){
             if (array[i] < element || isInserted)
                 inserted[j] = array[i];
             else if(!isInserted){
